@@ -1,0 +1,66 @@
+# Each agent reads only the section relevant to it
+
+agents:
+
+  sensor_agent:
+    detection_radius: 120.0
+    earthquake_detection_threshold: 0.3
+    fire_detection_threshold: 0.4
+
+    noise:
+      gaussian_stddev: 0.05
+      false_positive_rate: 0.02
+
+    failure:
+      enabled: true
+      failure_probability_per_step: 0.001
+      recovery_probability_per_step: 0.05
+
+  civilian_agent:
+    movement:
+      max_speed: 1.2
+
+    panic:
+      increase_rate: 0.15
+      decrease_rate: 0.05
+      panic_threshold: 0.6
+
+    injury:
+      initial_probability: 0.1
+      severity_variance: 0.2
+
+  rescue_agent:
+    movement:
+      max_speed: 2.0
+
+    capacity:
+      max_casualties: 3
+
+    decision:
+      hazard_tolerance: 0.4
+
+  medical_agent:
+    treatment:
+      base_treatment_time: 8.0
+      success_probability: 0.85
+
+    triage:
+      immediate_threshold: 0.8
+      delayed_threshold: 0.5
+      minor_threshold: 0.2
+
+  evacuation_agent:
+    movement:
+      max_speed: 1.8
+
+    coordination:
+      max_group_size: 10
+      reroute_threshold: 0.6
+
+  command_center_agent:
+    awareness:
+      global_visibility: true
+      update_interval: 5
+
+    coordination:
+      max_active_tasks: 20

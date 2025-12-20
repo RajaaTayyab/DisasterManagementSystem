@@ -1,0 +1,21 @@
+# Simulation-level configuration
+# Controls global execution parameters and time dynamics
+
+simulation:
+  name: "Disaster Management & Emergency Response Simulation"
+  description: "GAIA-based multi-agent disaster response system"
+
+  time:
+    timestep_seconds: 1.0
+    max_duration_seconds: 300
+    real_time_factor: 0.1   # Sleep multiplier for readability
+
+  execution:
+    random_seed: 42
+    log_level: INFO
+    enable_metrics: true
+    enable_event_logging: true
+
+  termination_conditions:
+    stop_when_no_events: false
+    stop_when_all_civilians_safe: false

@@ -1,0 +1,35 @@
+# Environment and disaster configuration
+# Defines the physical world and hazard dynamics
+
+environment:
+
+  city:
+    width: 500
+    height: 500
+    population_density: 0.02
+    building_density: 0.01
+
+  infrastructure:
+    road_blockage_probability: 0.15
+    hospital_capacity: 50
+
+  hazards:
+
+    earthquake:
+      enabled: true
+      base_intensity: 0.6
+      intensity_variance: 0.2
+      damage_radius: 150
+      aftershock_probability: 0.25
+      aftershock_delay_range: [10, 60]
+
+    fire:
+      enabled: true
+      ignition_probability: 0.3
+      spread_rate: 0.1
+      wind_factor: 1.2
+      max_radius: 120
+
+  hazard_decay:
+    fire_decay_rate: 0.02
+    structural_stability_decay: 0.01
