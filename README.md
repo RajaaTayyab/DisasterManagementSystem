@@ -1,4 +1,4 @@
-# 🚨 Disaster Management & Emergency Response System
+#  Disaster  & Emergency Response System
 
 A simulation-based **Disaster Management System** that models emergency scenarios using an **agent-based architecture** and **event-driven communication**.
 
