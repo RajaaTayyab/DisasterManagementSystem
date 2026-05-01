@@ -42,14 +42,9 @@ DisasterManagementSystem/
 
 ##  Getting Started
 
-### 1. Clone the Repository
 
-```bash
-git clone <your-repo-url>
-cd DisasterManagementSystem
-```
 
-### 2. Install Dependencies
+###  Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -63,7 +58,7 @@ pip install pyyaml
 
 ---
 
-### 3. Run the Simulation
+###  Run the Simulation
 
 ```bash
 python main.py
@@ -103,7 +98,7 @@ Defines how agents act:
 
 ---
 
-## 📊 Output
+##  Output
 
 - Simulation logs  
 - Event tracking  
@@ -111,7 +106,7 @@ Defines how agents act:
 
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python  
 - YAML  
